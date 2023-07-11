@@ -93,9 +93,9 @@
                 */
 
       const addClassToTitle = function () {
-        const h1 = document.querySelector("h1");
-        h1.classlist.add(".myHeading");
-        console.log(addClassToTitle);
+        h1 = document.querySelector("h1");
+        h1.classList.add("myHeading");
+        console.log(h1);
       };
       addClassToTitle();
       /* ESERCIZIO 3
@@ -108,8 +108,11 @@
                    Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
                   */
 
-      const changeUrls = function () {};
-
+      const changeUrls = function () {
+        const a = querySelector("body div a");
+        a.setAttribute("href", "https://www.google.com");
+      };
+      changeUrls();
       /* ESERCIZIO 5
                    Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
                 */
