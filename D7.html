@@ -109,16 +109,21 @@
                   */
 
       const changeUrls = function () {
-        const a = querySelector("body div a");
-        a.setAttribute("href", "https://www.google.com");
+        // // const a = querySelector("body div a");
+        // // a.setAttribute("href", "https://www.google.com");
+        // const btn= document.querySelector('div a');
+        // btn.onclick =changeUrls
       };
       changeUrls();
       /* ESERCIZIO 5
                    Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
                 */
 
-      const addToTheSecond = function () {};
-
+      const addToTheSecond = function () {
+        const secondul = document.querySelector("addToTheSecondul");
+        ul.appendChild("li");
+      };
+      addToTheSecond()
       /* ESERCIZIO 6
                    Scrivi una funzione che aggiunga un secondo paragrafo al primo div
                 */
@@ -135,8 +140,10 @@
                    Scrivi una funzione che renda verde il background di ogni lista non ordinata
                   */
 
-      const paintItGreen = function () {};
-
+      const paintItGreen = function () {;
+      const ul = document.querySelector('div ul');
+        ul.style.background-color = 'green';}
+      paintItGreen()
       /* ESERCIZIO 9
                    Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
                   */
